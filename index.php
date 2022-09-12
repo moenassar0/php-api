@@ -17,7 +17,7 @@
                 </form>
             </div>
             <div class="col">
-                <form action="palindrome-api.php" method="GET">
+                <form action="calculation-api.php" method="POST">
                     <input name="a" type="text">
                     <input name="b" type="text">
                     <input name="c" type="text">
