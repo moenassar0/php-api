@@ -4,19 +4,34 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #9b59b6;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
 .container{
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+    justify-content: center;
+    align-content: center;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 30%;
     padding: 10px 10px;
 }
 
 .col{
-    width: 30%;
-    background-color: blueviolet;
+    width: 100%;
     margin: 0 10px;
 }

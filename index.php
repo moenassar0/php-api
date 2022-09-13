@@ -12,10 +12,12 @@
         <div class="row">
             <div class="col">
                 <form action="palindrome-api.php" method="GET">
-                    <input name="string" type="text">
+                    <input name="string" type="text" placeholder="Palindrome string">
                     <input name="submit" type="submit">
                 </form>
             </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <form action="calculation-api.php" method="POST">
                     <input name="a" type="text">
@@ -24,12 +26,16 @@
                     <input name="submit" type="submit">
                 </form>
             </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <form action="password-api.php" method="POST">
                     <input name="password" type="text">
                     <input name="submit" type="submit">
                 </form>
             </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <form action="christmas-api.php" method="GET">
                     Christmas days left
