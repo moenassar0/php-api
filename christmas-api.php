@@ -1,13 +1,17 @@
 <?php
 
     if(isset($_GET['submit'])){
+        //Get current day
         $currenDate = strtotime(date("d-m-Y"));
+
+        //Get christmas day
         $christmas = strtotime("25-12-2022");
-        echo $currenDate . "<br>";
-        echo $christmas - $currenDate . "<br>";
+
+        //Get the difference (in seconds)
         $diff = ($christmas - $currenDate);
+
+        //Calculate the day
         $daysleft = abs(round($diff / 86400));
-        echo abs(round($diff / 86400)) . "<br>";
 
         $info = array(
             'days_left_for_christmas' =>  $daysleft
