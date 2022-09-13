@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="christmas-api.php" method="GET">
+                    <h2>How many days till christmas?</h2>
+                    <input class="btn" name="submit" type="submit" value="Check">
+                </form>
+            </div>
+            <div class="col">
+                <form action="password-api.php" method="POST">
+                    <input class="input-style" name="password" type="password" placeholder="Check if your password is strong">
+                    <input class="btn" name="submit" type="submit">
+                </form>
+            </div>
+            <div class="col">
+                <form action="calculation-api.php" method="POST">
+                    <input class="input-style" name="a" type="text" placeholder="a">
+                    <input class="input-style" name="b" type="text" placeholder="b">
+                    <input class="input-style" name="c" type="text" placeholder="c"><br>
+                    <input class="btn" name="submit" type="submit" value="Calculate">
+                </form>
+            </div>
+            <div class="col">
+                <form action="palindrome-api.php" method="GET">
+                    <input name="string" type="text" placeholder="Palindrome string">
+                    <input class="btn" name="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
