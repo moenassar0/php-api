@@ -10,7 +10,8 @@ $jsoninfo = json_encode($info);
 
 echo $jsoninfo;
 
-function Palindrome($string){ 
+function Palindrome($string){
+    //Check if reverse of the string is equal to string 
     if (strrev($string) == $string){ 
         return true; 
     }
