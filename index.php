@@ -30,6 +30,12 @@
                     <input name="submit" type="submit">
                 </form>
             </div>
+            <div class="col">
+                <form action="christmas-api.php" method="GET">
+                    Christmas days left
+                    <input name="submit" type="submit">
+                </form>
+            </div>
         </div>
 
     </div>
