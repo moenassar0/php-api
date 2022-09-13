@@ -1,13 +1,26 @@
 <?php
+    if(isset($_POST['password'])){
+        $pass = $_POST['password'];
+        $info = array(
+            'password' =>  $pass,
+            'is-strong' => validate($pass)
+        );
+        $jsoninfo = json_encode($info);
 
-if(preg_match('/[A-Z]/', "Ab")){
-    if(preg_match('/[a-z]/', "Ab")){
-        if(preg_match('/[[:punct:]]/', "Ab")){
-            echo "mix of uppercase and lowercase and symbols";
-        }
+        echo $jsoninfo;
     }
-}else{
-    echo "no match";
-}
+    function validate($pass){
+        if(preg_match('/[A-Z]/', $pass)){
+            if(preg_match('/[a-z]/', $pass)){
+                if(preg_match('/[[:punct:]]/', $pass)){
+                    if(strlen($pass) >= 12 && strlen($pass) <= 14){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
 
 ?>
