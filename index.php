@@ -24,6 +24,12 @@
                     <input name="submit" type="submit">
                 </form>
             </div>
+            <div class="col">
+                <form action="password-api.php" method="POST">
+                    <input name="password" type="text">
+                    <input name="submit" type="submit">
+                </form>
+            </div>
         </div>
 
     </div>
